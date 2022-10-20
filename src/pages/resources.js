@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
 
-const IndexPage = ({ data }) => {
+const ResourcePage = ({ data }) => {
+
   const page = data.contentfulContentPage;
 
   return (
@@ -19,14 +20,13 @@ const IndexPage = ({ data }) => {
     </Layout>
   )
 }
-
-export default IndexPage
+export default ResourcePage;
 
 export const Head = ({ data }) => <title>{`${data.contentfulContentPage.mainHeading} | Sanna Mäkinen`}y</title>
 
 export const assetQuery = graphql`
   {
-    contentfulContentPage(id: {eq: "450b0585-4494-55c1-8e02-8f9e28d6e82f"}) {
+    contentfulContentPage(id: {eq: "bb69f299-62f6-52be-bcb3-9ab9b99b36c7"}) {
       id
       mainHeading
       bodyText {

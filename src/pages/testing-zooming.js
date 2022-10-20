@@ -3,7 +3,13 @@ import { graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
 
-const IndexPage = ({ data }) => {
+const zoomButton = {
+  height: '80px',
+  width: '180px'
+}
+
+const ZoomPage = ({ data }) => {
+
   const page = data.contentfulContentPage;
 
   return (
@@ -14,19 +20,22 @@ const IndexPage = ({ data }) => {
             { page.mainHeading }
           </h1>
           {renderRichText(page.bodyText)}
+
+          <div>
+            <button class="button" style={zoomButton}>This is a button that does nothing</button>
+          </div>
         </div>
       </main>
     </Layout>
   )
 }
-
-export default IndexPage
+export default ZoomPage;
 
 export const Head = ({ data }) => <title>{`${data.contentfulContentPage.mainHeading} | Sanna Mäkinen`}y</title>
 
 export const assetQuery = graphql`
   {
-    contentfulContentPage(id: {eq: "450b0585-4494-55c1-8e02-8f9e28d6e82f"}) {
+    contentfulContentPage(id: {eq: "f4b88e58-4723-5d68-b486-3d2892d44d61"}) {
       id
       mainHeading
       bodyText {
