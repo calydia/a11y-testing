@@ -1,0 +1,38 @@
+label {
+  display: block;
+  margin-bottom: var(--spacing-half);
+}
+
+input {
+  padding: var(--spacing-half);
+}
+
+fieldset {
+  margin: var(--spacing-default) 0;
+  padding: var(--spacing-default);
+}
+
+legend {
+  padding: 0 var(--spacing-half);
+}
+
+.option {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--spacing-half);
+  margin: var(--spacing-half);
+}
+
+.option label {
+  margin-bottom: 0;
+}
+
+select {
+  padding: var(--spacing-default);
+}
+
+.button {
+  font-size: 1.125rem;
+  margin-top: var(--spacing-double);
+}
