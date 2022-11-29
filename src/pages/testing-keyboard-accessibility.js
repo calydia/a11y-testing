@@ -2,12 +2,18 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
+import Button from '../components/Button';
 import '../styles/keyboard-testing.css';
 import '../styles/forms.css';
 
 const KeyboardPage = ({ data }) => {
 
   const page = data.contentfulContentPage;
+
+  const clickHandler = (event) => {
+    event.preventDefault();
+    console.log('clicked');
+  }
 
   return (
     <Layout>
@@ -23,20 +29,20 @@ const KeyboardPage = ({ data }) => {
           <h3>Form controls to test keyboard usage with</h3>
 
           <form>
-            <label for="text">Text input</label>
+            <label htmlFor="text">Text input</label>
             <input name="text" type="text"></input>
 
             <fieldset>
               <legend>Choose your favorite</legend>
-              <div class="option">
+              <div className="option">
                 <input type="radio" id="html" name="fav_language" value="HTML" />
-                <label for="html">HTML</label>
+                <label htmlFor="html">HTML</label>
               </div>
-              <div class="option">
+              <div className="option">
                 <input type="radio" id="css" name="fav_language" value="CSS" />
-                <label for="css">CSS</label>
+                <label htmlFor="css">CSS</label>
               </div>
-              <div class="option">
+              <div className="option">
                 <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
                 <label>JavaScript</label>
               </div>
@@ -44,17 +50,17 @@ const KeyboardPage = ({ data }) => {
 
             <fieldset>
               <legend>Choose your favorite</legend>
-              <div class="option">
+              <div className="option">
                 <input type="checkbox" id="a11y" name="fav_language_multi" value="a11y" />
-                <label for="a11y">A11Y</label>
+                <label htmlFor="a11y">A11Y</label>
               </div>
-              <div class="option">
+              <div className="option">
                 <input type="checkbox" id="accessibility" name="fav_language_multi" value="accessibility" />
-                <label for="accessibility">Accessibility</label>
+                <label htmlFor="accessibility">Accessibility</label>
               </div>
-              <div class="option">
+              <div className="option">
                 <input type="checkbox" id="web" name="fav_language_multi" value="web" />
-                <label for="web">Web accessibility</label>
+                <label htmlFor="web">Web accessibility</label>
               </div>
             </fieldset>
 
@@ -67,7 +73,7 @@ const KeyboardPage = ({ data }) => {
             </select>
 
             <div>
-              <button className="button" type="submit">This submit button does nothing</button>
+              <Button />
             </div>
           </form>
         </div>

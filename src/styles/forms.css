@@ -4,7 +4,8 @@ label {
 }
 
 input {
-  padding: var(--spacing-half);
+  font-size: 1.125rem;
+  padding: var(--spacing-default);
 }
 
 fieldset {
@@ -34,5 +35,6 @@ select {
 
 .button {
   font-size: 1.125rem;
+  font-weight: bold;
   margin-top: var(--spacing-double);
 }

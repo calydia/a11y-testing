@@ -22,6 +22,7 @@
   --button-color: white;
   --button-background-color: #014cbc;
   --button-background-hover-color: #54007b;
+  --text-demo-color: #ccc;
 }
 
 .dark {
@@ -37,6 +38,7 @@
   --button-color: black;
   --button-background-color: #9edcff;
   --button-background-hover-color: wheat;
+  --text-demo-color: #333333;
 }
 
 * {
@@ -264,4 +266,12 @@ footer .link-wrapper {
 
 .button:hover {
   background-color: var(--button-background-hover-color);
+}
+
+.color-contrast {
+  color: var(--text-demo-color);
+}
+
+button.demo-button {
+  margin-top: 0;
 }
