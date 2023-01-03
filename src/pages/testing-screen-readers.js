@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
 import MenuComponent from '../components/MenuComponent';
+import MenuComponentFixed from '../components/MenuComponentFixed';
 import Button from '../components/Button';
 import '../styles/forms.css';
 
@@ -71,9 +72,9 @@ const ScreenReaderPage = ({ data }) => {
           </form>
 
           <h2>Menus</h2>
-          <MenuComponent fixed="false" />
+          <MenuComponent />
 
-          <MenuComponent fixed="true" />
+          <MenuComponentFixed />
 
           <h2>Cards</h2>
           <p>With cards we often see developers try to be clever and use aria-label to restrict the info screen reader users get. This is done in good faith but the end results usually are less than optimal.</p>

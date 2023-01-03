@@ -4,8 +4,8 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
 
 const zoomButton = {
-  height: '80px',
-  width: '180px'
+  height: '60px',
+  width: '160px'
 }
 
 const ZoomPage = ({ data }) => {
@@ -22,7 +22,7 @@ const ZoomPage = ({ data }) => {
           {renderRichText(page.bodyText)}
 
           <div>
-            <button class="button" style={zoomButton}>This is a button that does nothing</button>
+            <button class="button" style={zoomButton}>I am a button</button>
           </div>
         </div>
       </main>

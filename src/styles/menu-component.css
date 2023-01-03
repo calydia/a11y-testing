@@ -1,0 +1,13 @@
+.demo-nav-list {
+  justify-content: left;
+}
+
+.demo-menu-item {
+  padding: 0.25rem;
+}
+
+.demo-nav,
+.hide {
+  display: none;
+  visibility: hidden;
+}

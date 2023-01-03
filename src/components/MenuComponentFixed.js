@@ -24,18 +24,20 @@ const dummyLinks = [
 export default function MenuComponent() {
 
   const [menuOpened, setMenuOpened] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const clickHandler = () => {
     setMenuOpened(prevState => !prevState);
+    setExpanded(prevState => !prevState);
   }
 
   return (
     <div className="demo-menu">
-      <button className="menu-toggle" onClick={clickHandler}>
+      <button className="menu-toggle" onClick={clickHandler} aria-expanded={expanded} aria-haspopup="true" aria-controls="menu-nav">
         { menuOpened ? 'Close menu' : 'Open menu' }
       </button>
 
-      <nav className={ menuOpened ? 'show' : 'hide' }>
+      <nav className="demo-nav" id="menu-nav">
         <ul className="demo-nav-list">
           {dummyLinks.map((item) => {
             return (
