@@ -15,6 +15,7 @@ const AutomatedToolPage = ({ data }) => {
             { page.mainHeading }
           </h1>
           {renderRichText(page.bodyText)}
+
         </div>
       </main>
     </Layout>

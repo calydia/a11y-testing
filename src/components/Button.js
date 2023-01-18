@@ -4,7 +4,6 @@ export default function Button() {
 
   const clickHandler = (event) => {
     event.preventDefault();
-    console.log('clicked');
   }
 
   return (

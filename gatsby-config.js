@@ -32,9 +32,14 @@ module.exports = {
         id: 'menu-5'
       },
       {
+        name: 'Automated tools',
+        link: '/testing-automated-tools',
+        id: 'menu-6'
+      },
+      {
         name: 'Resources',
         link: '/resources',
-        id: 'menu-6'
+        id: 'menu-7'
       }
     ]
   },

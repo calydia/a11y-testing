@@ -77,7 +77,7 @@ const ScreenReaderPage = ({ data }) => {
           <MenuComponentFixed />
 
           <h2>Cards</h2>
-          <p>With cards we often see developers try to be clever and use aria-label to restrict the info screen reader users get. This is done in good faith but the end results usually are less than optimal.</p>
+          <p>With cards we often see developers try to be clever and use aria-label to restrict the info screen reader users get. This is done in good faith but the end results usually are less than optimal. Assistive technology users deserve to get the same content.</p>
 
         </div>
       </main>

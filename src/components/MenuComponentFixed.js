@@ -37,7 +37,7 @@ export default function MenuComponent() {
         { menuOpened ? 'Close menu' : 'Open menu' }
       </button>
 
-      <nav className="demo-nav" id="menu-nav">
+      <nav id="menu-nav" className={ menuOpened ? 'show' : 'hide' }>
         <ul className="demo-nav-list">
           {dummyLinks.map((item) => {
             return (
