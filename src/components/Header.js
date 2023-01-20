@@ -32,6 +32,7 @@ export default function Header() {
               <li className="main-menu-item" key={item.id}>
                 <Link
                   to={item.link}
+                  className="main-menu-link"
                   activeClassName="active"
                   partiallyActive={ item.id === 'menu-1' ? false : true }
                 >

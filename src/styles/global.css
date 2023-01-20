@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --spacing-double-rem: 2rem;
   --spacing-quadruple: 64px;
@@ -133,19 +137,19 @@ p {
   margin: var(--spacing-double-rem) 0;
 }
 
-a {
+a:not(.post-link, .main-menu-link) {
   color: var(--link-color);
   text-decoration-color: var(--link-color);
 }
 
-a:hover {
+a:not(.post-link, .main-menu-link):hover {
   color: var(--link-hover-color);
   text-decoration-color: var(--link-hover-color);
   text-underline-offset: 1px;
   text-decoration-thickness: 3px;
 }
 
-a:focus {
+a:not(.post-link, .main-menu-link):focus {
   border-bottom: 2px solid var(--link-hover-color);
   border-top: 2px solid var(--link-hover-color);
   color: var(--link-hover-color);
@@ -155,6 +159,7 @@ a:focus {
 }
 
 ul {
+  list-style: disc;
   margin-left: var(--spacing-double);
 }
 
@@ -274,4 +279,39 @@ footer .link-wrapper {
 
 button.demo-button {
   margin-top: 0;
+}
+
+/* Include some Tailwind project styles due to laziness */
+.gradient-border-light {
+  border-image: linear-gradient(to right, #46037e 0%, RoyalBlue 50%, #46037e 100%);
+  border-image-slice: 1;
+}
+
+.gradient-border-dark {
+  border-image: linear-gradient(to right, #46037e 0%, RoyalBlue 50%, #46037e 100%);
+  border-image-slice: 1;
+}
+
+.post-link:hover .post-title {
+  @apply text-lt-purple dark:text-dk-blue-light underline decoration-2 underline-offset-4
+}
+
+.custom-grid {
+  grid-template-columns: 1fr 280px;
+}
+
+/* Override reseted fieldset default style */
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
 }

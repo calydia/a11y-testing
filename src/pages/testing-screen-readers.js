@@ -5,6 +5,8 @@ import Layout from '../components/Layout';
 import MenuComponent from '../components/MenuComponent';
 import MenuComponentFixed from '../components/MenuComponentFixed';
 import Button from '../components/Button';
+import CardOk from '../components/CardOk';
+import CardNotOk from '../components/CardNotOk';
 import '../styles/forms.css';
 
 const ScreenReaderPage = ({ data }) => {
@@ -78,6 +80,11 @@ const ScreenReaderPage = ({ data }) => {
 
           <h2>Cards</h2>
           <p>With cards we often see developers try to be clever and use aria-label to restrict the info screen reader users get. This is done in good faith but the end results usually are less than optimal. Assistive technology users deserve to get the same content.</p>
+
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-8" role="list">
+            <CardOk index="1" />
+            <CardNotOk index="2" />
+          </ul>
 
         </div>
       </main>
