@@ -14,7 +14,6 @@ export default function CardNotOk(index) {
           alt=""
           width={500}
           height={300}
-          layout="constrained"
         />
         <div className="self-center text-center">
           <span id={`blog-title${index}`} className="post-title block text-lg font-bold md:text-2xl py-4 px-2

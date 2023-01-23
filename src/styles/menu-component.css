@@ -10,3 +10,9 @@
   display: none;
   visibility: hidden;
 }
+
+.menu-toggle {
+  border: 0.125rem solid var(--button-background-color);
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+}

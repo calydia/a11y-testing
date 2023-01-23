@@ -11,6 +11,7 @@
   --wrapper-width: 80em;
   --heading-line-height: 1.2;
   --text-width: 40em;
+  --input-color: #000;
 }
 
 .light {
@@ -139,6 +140,8 @@ p {
 
 a:not(.post-link, .main-menu-link) {
   color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 1px;
   text-decoration-color: var(--link-color);
 }
 

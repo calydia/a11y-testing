@@ -4,6 +4,7 @@ label {
 }
 
 input {
+  color: var(--input-color);
   font-size: 1.125rem;
   padding: var(--spacing-default);
 }
@@ -30,6 +31,7 @@ legend {
 }
 
 select {
+  color: var(--input-color);
   padding: var(--spacing-default);
 }
 

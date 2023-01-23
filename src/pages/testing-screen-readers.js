@@ -79,7 +79,13 @@ const ScreenReaderPage = ({ data }) => {
           <MenuComponentFixed />
 
           <h2>Cards</h2>
-          <p>With cards we often see developers try to be clever and use aria-label to restrict the info screen reader users get. This is done in good faith but the end results usually are less than optimal. Assistive technology users deserve to get the same content.</p>
+          <p>With cards the most common mistake we make is to decide for the user what content is important in the card.
+            The accessible name should contain the visually shown text. And this means all of it.
+          </p>
+
+          <p>One reason we make the mistake of restricting the content is that we feel it will be too heavy for the listener.
+            But we often also forget that screen reader users listen to the content with much faster pace than we do.
+          </p>
 
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-8" role="list">
             <CardOk index="1" />
