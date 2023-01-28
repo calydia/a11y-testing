@@ -22,7 +22,7 @@ const ZoomPage = ({ data }) => {
           {renderRichText(page.bodyText)}
 
           <div>
-            <button class="button" style={zoomButton}>I am a button</button>
+            <button className="button" style={zoomButton}>I am a button</button>
           </div>
         </div>
       </main>

@@ -74,6 +74,9 @@ const ScreenReaderPage = ({ data }) => {
           </form>
 
           <h2>Menus</h2>
+
+          <p>Listen to the menu functionalities. Here ARIA really makes a difference for the user.</p>
+
           <MenuComponent />
 
           <MenuComponentFixed />
@@ -83,7 +86,7 @@ const ScreenReaderPage = ({ data }) => {
             The accessible name should contain the visually shown text. And this means all of it.
           </p>
 
-          <p>One reason we make the mistake of restricting the content is that we feel it will be too heavy for the listener.
+          <p>One reason we make the mistake of restricting the amount of content is that we feel it will be too heavy for the listener.
             But we often also forget that screen reader users listen to the content with much faster pace than we do.
           </p>
 
@@ -91,6 +94,8 @@ const ScreenReaderPage = ({ data }) => {
             <CardOk index="1" />
             <CardNotOk index="2" />
           </ul>
+
+          <h2></h2>
 
         </div>
       </main>
