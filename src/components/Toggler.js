@@ -6,8 +6,8 @@ import { HiMoon } from "react-icons/hi";
 const Toggle = ({theme,  toggleTheme }) => {
     return (
       <button onClick={toggleTheme} className="theme-toggle"
-        aria-label={ (theme === "light") ? "Switch to dark mode" : "Switch to light mode"}
-        title={ (theme === "light") ? "Switch to dark mode" : "Switch to light mode"}
+        aria-label={ (theme === "light") ? "Switch to dark version" : "Switch to light version"}
+        title={ (theme === "light") ? "Switch to dark version" : "Switch to light version"}
       >
         { (theme === "light") ? <HiMoon className="toggler-icon" aria-hidden="true" /> : <HiSun className="toggler-icon" aria-hidden="true" />}
       </button>
