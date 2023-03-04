@@ -28,6 +28,7 @@
   --button-background-color: #014cbc;
   --button-background-hover-color: #54007b;
   --text-demo-color: #ccc;
+  --input-border-color: #333;
 }
 
 .dark {
@@ -44,6 +45,7 @@
   --button-background-color: #9edcff;
   --button-background-hover-color: wheat;
   --text-demo-color: #333333;
+  --input-border-color: transparent;
 }
 
 * {
