@@ -31,7 +31,7 @@ export default function MenuComponent() {
 
   return (
     <div className="demo-menu">
-      <button className="menu-toggle" onClick={clickHandler}>
+      <button className="menu-toggle button" onClick={clickHandler}>
         { menuOpened ? 'Close menu' : 'Open menu' }
       </button>
 

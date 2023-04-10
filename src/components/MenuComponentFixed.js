@@ -33,7 +33,7 @@ export default function MenuComponent() {
 
   return (
     <div className="demo-menu">
-      <button className="menu-toggle" onClick={clickHandler} aria-expanded={expanded} aria-haspopup="true" aria-controls="menu-nav">
+      <button className="menu-toggle button" onClick={clickHandler} aria-expanded={expanded} aria-haspopup="true" aria-controls="menu-nav">
         { menuOpened ? 'Close menu' : 'Open menu' }
       </button>
 

@@ -70,5 +70,18 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://a11ytestingmain.gatsbyjs.io',
+        policy: [{userAgent: '*', disallow: ['/']}]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/*`],
+      },
+    }
   ]
 };

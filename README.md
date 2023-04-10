@@ -1,14 +1,4 @@
-## 🚀 Quick start
+# Welcome to testing for accessibility!
 
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-2.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
+This is a quick demo site I put up so you can focus on the various topics that cover the areas of accessibility testing.
+I don't cover accessibility auditing in this.
