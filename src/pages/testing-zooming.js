@@ -1,28 +1,74 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
-import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from '../components/Layout';
 
 const zoomButton = {
   height: '60px',
-  width: '160px'
+  width: '165px'
 }
 
-const ZoomPage = ({ data }) => {
-
-  const page = data.contentfulContentPage;
+const ZoomPage = () => {
 
   return (
     <Layout>
       <main>
-        <div className="content-wrapper">
-          <h1 id="skip-target">
-            { page.mainHeading }
-          </h1>
-          {renderRichText(page.bodyText)}
+        <div className="my-8 mx-4 max-w-[80em]">
+          <div className="mx-auto max-w-[40em]">
+            <h1 id="skip-target">
+              Testing zooming
+            </h1>
+            <div>
+              <p>For WCAG compliance, you should ensure functionality with content zooming:</p>
+              <ul>
+                <li>
+                  <p>"Regular" zoom up to 400%. This doesn't mean you need to be able to zoom this high on a mobile device, the criterion defines that you need to test for vertical scrolling content at width equivalent to 320 CSS pixels.</p>
+                  <ul>
+                    <li>320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom.</li>
+                  </ul>
+                </li>
+                <li>Text-only zooming up to 200%. This can be tested relatively easily at least on Firefox, where you have a setting for zooming the text only.</li>
+              </ul>
 
-          <div>
-            <button className="button" style={zoomButton}>I am a button</button>
+              <h3>Safari</h3>
+              <p>Cmd and +/- for regular zoom. Cmd and option and +/- for text-only. In the View menu, the zoom buttons change when you press the option key.</p>
+              <p>Text-only zooming works close together with the criterion of not having to scroll in two dimensions. In our case, the second dimension usually would be horizontal scrolling. That is only allowed for elements that require it.</p>
+              <p>On mobile things get easier really crowded. But the most important parts to check are that the text will fit onto the screen and that e.g. buttons and other elements can fit all the text.</p>
+              <p>When you create text content, remember both hyphenation and the possibility to break words if needed.</p>
+
+              <h2>Choosing the best units</h2>
+              <p>There isn't one rule on what units to use. But there are a few sets of good defaults that work for most cases. But from the accessibility point-of-view, you can use any units you like as long as you don't break any WCAG criteria.</p>
+              <ul>
+                <li>Fonts: Use scalable units. Pixels in fonts are not optimal since they won't scale when the user zooms the page.</li>
+                <li>Paddings: If you use scalable units with paddings, remember that they will scale when the user zooms the page. If you have a lot of nested content, you might run out of room.</li>
+                <li>Margins: Font-related margins with scalable units. Horizontal margins might have room issues if you have a lot of nested elements.</li>
+                <li>Widths: If you need to define widths, as a general rule, avoid pixels.</li>
+                <li>Media breakpoints: Avoid pixels.</li>
+              </ul>
+
+              <h2>How to test text-only zooming</h2>
+              <p>It's good to note that not all browsers behave the same when it comes to text-only zooming.</p>
+              <h3>Chrome</h3>
+              <p>Chrome doesn't support text-only zooming by default. But there are plugins. One I've used is <a href="https://chrome.google.com/webstore/detail/zoom-text-only/jamhfhbppcmkgghlkeieococonlbppjg" rel="noopener noreferrer">Zoom Text Only</a>.</p>
+
+              <h3>Firefox</h3>
+              <p>On Firefox you have the option to choose between regular zoom and zooming text. The option can be located under View {`>`} Zoom.</p>
+              <p>
+                <StaticImage
+                  src="../images/firefox-zoom.png"
+                  alt="Screenshot of Firefox zoom settings."
+                  width={388}
+                  height={207}
+                  className="w-full h-auto max-w-[388px]"
+                />
+              </p>
+
+              <h3>Safari</h3>
+              <p>Cmd and +/- for regular zoom. Cmd and option and +/- for text-only. In the View menu, the zoom buttons change when you press the option key.</p>
+            </div>
+
+            <div>
+              <button className="button" style={zoomButton}>I am a button</button>
+            </div>
           </div>
         </div>
       </main>
@@ -31,16 +77,4 @@ const ZoomPage = ({ data }) => {
 }
 export default ZoomPage;
 
-export const Head = ({ data }) => <title>{`${data.contentfulContentPage.mainHeading} | Sanna Mäkinen`}y</title>
-
-export const assetQuery = graphql`
-  {
-    contentfulContentPage(id: {eq: "f4b88e58-4723-5d68-b486-3d2892d44d61"}) {
-      id
-      mainHeading
-      bodyText {
-        raw
-      }
-    }
-  }
-`
+export const Head = () => <title>Testing zooming | Testing for accessibility</title>

@@ -107,26 +107,22 @@ body {
   hyphens: auto;
 }
 
-
 h1 {
-  font-size: 3rem;
-  line-height: var(--heading-line-height);
-  margin: var(--spacing-default) 0;
+  @apply text-4xl font-bold mt-4 mb-2 lg:text-5xl
 }
 
 h2 {
-  font-size: 2.5rem;
-  line-height: var(--heading-line-height);
-  margin: var(--spacing-default) 0;
+  @apply text-3xl	lg:text-4xl font-bold mt-8
 }
 
 h3 {
-  font-size: 2rem;
-  line-height: var(--heading-line-height);
-  margin: var(--spacing-default) 0;
+  @apply text-2xl lg:text-3xl font-bold mt-8
 }
 
-h4,
+h4 {
+  @apply text-xl	lg:text-2xl font-bold mt-8
+}
+
 h5,
 h6 {
   font-size: 1.5rem;
@@ -140,21 +136,21 @@ p {
   margin: var(--spacing-double-rem) 0;
 }
 
-a:not(.post-link, .main-menu-link) {
+a:not(.post-link, .main-menu-link, .button) {
   color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 1px;
   text-decoration-color: var(--link-color);
 }
 
-a:not(.post-link, .main-menu-link):hover {
+a:not(.post-link, .main-menu-link, .button):hover {
   color: var(--link-hover-color);
   text-decoration-color: var(--link-hover-color);
   text-underline-offset: 1px;
   text-decoration-thickness: 3px;
 }
 
-a:not(.post-link, .main-menu-link):focus {
+a:not(.post-link, .main-menu-link, .button):focus {
   border-bottom: 2px solid var(--link-hover-color);
   border-top: 2px solid var(--link-hover-color);
   color: var(--link-hover-color);
@@ -168,6 +164,7 @@ ul {
   margin-left: var(--spacing-double);
 }
 
+li,
 li p {
   margin: var(--spacing-default) 0;
 }
@@ -205,16 +202,6 @@ header {
 .main-menu-item a:focus {
   color: var(--link-hover-color);
   outline: 2px solid var(--link-hover-color);
-}
-
-main {
-  margin: var(--spacing-double) var(--spacing-default);
-  max-width: var(--wrapper-width);
-}
-
-.content-wrapper {
-  margin: 0 auto;
-  max-width: var(--text-width);
 }
 
 footer {
@@ -267,7 +254,7 @@ footer .link-wrapper {
 }
 
 .button {
-  @apply bg-lt-blue-dark text-white border-4 border-transparent dark:bg-dk-blue-light dark:text-black py-3 px-5;
+  @apply bg-lt-blue-dark text-white border-4 border-transparent dark:bg-dk-blue-light dark:text-black py-3 px-5 my-4;
   @apply hover:border-4 hover:border-lt-blue-dark hover:bg-transparent hover:text-lt-blue-dark dark:hover:text-dk-blue-light dark:hover:border-dk-blue-light;
   @apply focus:outline focus:outline-2 focus:outline-offset-4 focus:outline-black dark:focus:outline-white
 }
@@ -301,7 +288,6 @@ button.demo-button {
 
 /* Override reseted fieldset default style */
 fieldset {
-  display: block;
   margin-inline-start: 2px;
   margin-inline-end: 2px;
   padding-block-start: 0.35em;

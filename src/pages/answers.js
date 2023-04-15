@@ -1,20 +1,58 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
-import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import Layout from '../components/Layout';
 
-const AnswerPage = ({ data }) => {
-
-  const page = data.contentfulContentPage;
+const AnswerPage = () => {
 
   return (
     <Layout>
       <main>
-        <div className="content-wrapper">
-          <h1 id="skip-target">
-            { page.mainHeading }
-          </h1>
-          {renderRichText(page.bodyText)}
+        <div className="my-8 mx-4 max-w-[80em]">
+          <div className="mx-auto max-w-[40em]">
+            <h1 id="skip-target">
+              Answers
+            </h1>
+            <div>
+              <h2>Keyboard page</h2>
+              <ul>
+                <li>
+                  There is a visually hidden link (href #) with the label "Do you know where you are?
+                </li>
+                <li>
+                  In the radio button set, the Javascript option's label is not attached correctly to the select field.
+                </li>
+                <li>
+                  The select element's label is not attached correctly to the select field.
+                </li>
+              </ul>
+
+              <h2>Screen readers page</h2>
+              <ul>
+                <li>
+                  Same form errors as on the keyboard page.
+                </li>
+                <li>
+                  The first Open menu button technically works but gives no information to assistive technology users
+                </li>
+              </ul>
+
+              <h2>Visuals page</h2>
+              <ul>
+                <li>
+                  The text paragraph describing the text spacing bookmarklet prevents the user from changing the necessary values.
+                </li>
+              </ul>
+
+              <h2>Zooming page</h2>
+              <ul>
+                <li>
+                  The button on the page has restricted height and width in pixels, which is problematic. Avoid styling buttons like this. There can always be longer texts in buttons and zooming affects the button content as well.
+                </li>
+              </ul>
+
+              <h2>Automated tools page</h2>
+              <h2>Other things</h2>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
@@ -22,16 +60,4 @@ const AnswerPage = ({ data }) => {
 }
 export default AnswerPage;
 
-export const Head = ({ data }) => <title>{`${data.contentfulContentPage.mainHeading} | Sanna Mäkinen`}y</title>
-
-export const assetQuery = graphql`
-  {
-    contentfulContentPage(id: {eq: "eb6e0874-ce48-5aad-90d4-449aa128b3cb"}) {
-      id
-      mainHeading
-      bodyText {
-        raw
-      }
-    }
-  }
-`
+export const Head = () => <title>Answers | Testing for accessibility</title>
