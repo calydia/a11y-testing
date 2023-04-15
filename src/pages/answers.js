@@ -23,6 +23,9 @@ const AnswerPage = () => {
                 <li>
                   The select element's label is not attached correctly to the select field.
                 </li>
+                <li>
+                  Elements with multiple links to it should be h2 since it's not related to element semantics.
+                </li>
               </ul>
 
               <h2>Screen readers page</h2>

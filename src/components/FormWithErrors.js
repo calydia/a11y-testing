@@ -4,7 +4,7 @@ import Button from '../components/Button';
 export default function FormWithErrors() {
 
   return (
-    <div className="bg-slate-300 dark:bg-slate-900 w-full py-8">
+    <div className="bg-slate-300 dark:bg-slate-900 w-full py-8 my-12">
       <div className="mx-auto max-w-[40em]">
         <h3 className="mt-0">Some basic form controls to test</h3>
 

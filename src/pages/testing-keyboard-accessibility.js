@@ -70,16 +70,52 @@ const KeyboardPage = () => {
                   When inside a checkbox or radio button set, press arrow keys to move between the options.
                 </li>
               </ul>
-
-              <h2>{`<a> is not a <button>`}</h2>
-              <p>You might have heard the saying "A link is not a button" or vice versa. And this is not a minor thing. Links and buttons are not the same things. A button does something on the page, for example, opens a modal. A link will take you somewhere, usually to another page.</p>
-              <p>We all have probably met the button-looking links, which are quite common these days. While they can be great for catching people's eye and getting them to click on these "CTA buttons", there is also a downside. These can be confusing for users because you can't visually tell if is it a link or a button. And if you are a user who activates buttons with a spacebar but the element is actually a link... well. Try what happens with the link below this paragraph.</p>
-              <a href="#" className="button">This is a link button</a>
             </div>
           </div>
         </div>
 
         <FormWithErrors />
+
+        <div className="my-8 mx-4 max-w-[80em]">
+          <div className="mx-auto max-w-[40em]">
+            <h2>Element semantics</h2>
+            <p>You might have heard the saying "A link is not a button" or vice versa. And this is not a minor thing. Links and buttons are semantic elements with different functions. A button does something on the page, for example, opens a modal. A link will take you somewhere, usually to another page.</p>
+            <p>We all have probably met the button-looking links, which are quite common these days. While they can be great for catching people's eye and getting them to click on these "CTA buttons", there is also a downside. These can be confusing for users because you can't visually tell if is it a link or a button. And if you are a user who activates buttons with a spacebar but the element is actually a link... well. Try what happens with the link below this paragraph.</p>
+            <a href="#" className="button inline-block">This is a link button</a>
+            <p>Another thing that is not a button is a <code>{`<div>`}</code>. Use <code>{`<button>`}</code> for elements that open and close modals. That will save you time and reduce the number of reported bugs.</p>
+
+            <h3 class="text-3xl	lg:text-4xl">Elements with multiple links to it</h3>
+
+            <p>
+              You might have seen implementations of cards where you have separate links to the target. For example, in an image, heading and then a link button. While this technically is allowed, it is not recommended for several reasons.
+              It can get tedious to try to go through a list of items when you have multiple links for one item.
+            </p>
+            <p>
+              This type of approach can be also often seen in search results.
+            </p>
+
+            <div className="border-t-2 mb-8">
+              <a href="#"><h3>First element</h3></a>
+              <p>This is some description</p>
+              <a href="#">https://the-url-of-this-page</a>
+            </div>
+            <div className="border-t-2 mb-8">
+              <a href="#"><h3>Second element</h3></a>
+              <p>This is some description</p>
+              <a href="#">https://the-url-of-this-page</a>
+            </div>
+            <div className="border-t-2 mb-8">
+              <a href="#"><h3>Third element</h3></a>
+              <p>This is some description</p>
+              <a href="#">https://the-url-of-this-page</a>
+            </div>
+            <div className="border-t-2 mb-8">
+              <a href="#"><h3>Fourth element</h3></a>
+              <p>This is some description</p>
+              <a href="#">https://the-url-of-this-page</a>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   )
