@@ -15,7 +15,7 @@ const AnswerPage = () => {
               <h2>Keyboard page</h2>
               <ul>
                 <li>
-                  There is a visually hidden link (href #) with the label "Do you know where you are?
+                  There is a visually hidden link (href to this page) with the label "Do you know where you are?
                 </li>
                 <li>
                   In the radio button set, the Javascript option's label is not attached correctly to the select field.
@@ -34,7 +34,7 @@ const AnswerPage = () => {
                   Same form errors as on the keyboard page.
                 </li>
                 <li>
-                  The first Open menu button technically works but gives no information to assistive technology users
+                  The first Open menu button works for sighted users but gives no information to assistive technology users.
                 </li>
               </ul>
 
@@ -50,10 +50,25 @@ const AnswerPage = () => {
                 <li>
                   The button on the page has restricted height and width in pixels, which is problematic. Avoid styling buttons like this. There can always be longer texts in buttons and zooming affects the button content as well.
                 </li>
+                <li>Heading level skipping.</li>
               </ul>
 
               <h2>Automated tools page</h2>
+              <ul>
+                <li>
+                  Skipping heading levels.
+                </li>
+                <li>
+                  An empty heading.
+                </li>
+              </ul>
+
               <h2>Other things</h2>
+              <ul>
+                <li>
+
+                </li>
+              </ul>
             </div>
           </div>
         </div>

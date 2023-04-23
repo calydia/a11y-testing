@@ -29,8 +29,6 @@ const ZoomPage = () => {
                 <li>Text-only zooming up to 200%. This can be tested relatively easily at least on Firefox, where you have a setting for zooming the text only.</li>
               </ul>
 
-              <h3>Safari</h3>
-              <p>Cmd and +/- for regular zoom. Cmd and option and +/- for text-only. In the View menu, the zoom buttons change when you press the option key.</p>
               <p>Text-only zooming works close together with the criterion of not having to scroll in two dimensions. In our case, the second dimension usually would be horizontal scrolling. That is only allowed for elements that require it.</p>
               <p>On mobile things get easier really crowded. But the most important parts to check are that the text will fit onto the screen and that e.g. buttons and other elements can fit all the text.</p>
               <p>When you create text content, remember both hyphenation and the possibility to break words if needed.</p>

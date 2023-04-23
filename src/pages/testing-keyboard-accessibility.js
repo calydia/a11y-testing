@@ -46,7 +46,7 @@ const KeyboardPage = () => {
                 </li>
               </ul>
               <p>
-                The idea is to jump from one focusable element to the next. The focus isn't supposed to move to e.g. text content or headings. <a href="#" className="visually-hidden hidden-link">Do you know where you are?</a>
+                The idea is to jump from one focusable element to the next. The focus isn't supposed to move to e.g. text content or headings. <a href="/answers" className="visually-hidden hidden-link">Do you know where you are?</a>
               </p>
               <p>
                 The item you are focusing on should have a visible enough focus style. According to WCAG, the browser default style is enough to pass the criterion, but it's better to have more visible styles. Also, WCAG 2.2 might bring on changes.
