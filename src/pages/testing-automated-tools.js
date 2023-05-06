@@ -23,10 +23,7 @@ const AutomatedToolPage = () => {
                   Chrome and Edge have Lighthouse built-in
                 </li>
                 <li>
-                  Firefox also has some accessibility tools by preventDefault
-                </li>
-                <li>
-                  <a href="https://wave.webaim.org/">WebAIM's WAVE</a> (Web Accessibility Evaluation Tool)
+                  Firefox also has some accessibility tools by default
                 </li>
                 <li>
                   <a href="https://www.deque.com/axe/">Deque's axe</a>

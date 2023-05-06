@@ -51,10 +51,10 @@ const ScreenReaderPage = () => {
               </p>
               <ul>
                 <li>
-                  <a href="">PUUTTUU!: 1.1.1 Non-text content</a> - the image alternative texts
+                  <a href="https://a11y.sanna.ninja/demo/perceivable/1-1-1-non-text-content-alt-attribute">1.1.1 Non-text content</a> - the image alternative texts
                 </li>
                 <li>
-                  <a href="">PUUTTUU!: 2.5.3 Label In Name</a> - the importance of having the visual information in any accessible labels
+                  <a href="https://a11y.sanna.ninja/demo/operable/2-5-3-label-in-name">2.5.3 Label In Name</a> - the importance of having the visual information in any accessible labels
                 </li>
               </ul>
               <p>
@@ -87,9 +87,9 @@ const ScreenReaderPage = () => {
 
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-8" role="list">
               <CardOk index="1" alt="" />
-              <CardNotOk index="2" title="Interesting headline for this card" ariaLabel="This is a title but of which card?" alt="Image of a cat." />
+              <CardNotOk index="2" title="Interesting headline for this card" ariaLabel="This is a title but of which card?" alt="dafesfadas" />
               <CardNotOk index="3" title="Super interesting card!" ariaLabel="" alt="A fluffy cat sniffs her new crocheted bed." />
-              <CardNotOk index="4" title="What is this card?" ariaLabel="" alt="Image of a cat." />
+              <CardNotOk index="4" title="What is this card?" />
             </ul>
 
             <p>One recommendation that is given in accessibility audits is to have the image below the heading.
