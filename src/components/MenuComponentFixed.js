@@ -38,10 +38,10 @@ export default function MenuComponent() {
       </button>
 
       <nav id="menu-nav" className={ menuOpened ? 'show' : 'hide' }>
-        <ul className="demo-nav-list">
+        <ul className="justify-start">
           {dummyLinks.map((item) => {
             return (
-              <li className="demo-menu-item" key={item.id}>
+              <li className="p-1" key={item.id}>
                 <Link
                   to={item.link}
                 >
