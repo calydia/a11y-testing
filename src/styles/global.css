@@ -49,14 +49,7 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-}
-
-.skip-link {
-  border-bottom: 2px solid transparent;
-  border-top: 2px solid transparent;
-  padding: 5px 0;
+  @apply m-0 p-0;
 }
 
 .site-name {
@@ -67,20 +60,13 @@
 }
 
 .link-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  @apply items-center flex flex-row flex-wrap justify-between;
 }
 
 .theme-toggle {
-  background: transparent;
-  border-bottom: 2px solid transparent;
-  border-left: none;
-  border-right: none;
-  border-top: 2px solid transparent;
+  @apply bg-transparent border-solid border-l-0 border-r-0 border-b-2 border-t-2 border-transparent cursor-pointer;
+
   color: var(--header-text-color);
-  cursor: pointer;
   padding: var(--spacing-half) var(--spacing-half);
 }
 
@@ -92,11 +78,6 @@
 .theme-toggle:focus {
   border-bottom: 2px solid var(--link-color);
   border-top: 2px solid var(--link-color);
-}
-
-.toggler-icon {
-  height: 2em;
-  width: 2em;
 }
 
 body {
@@ -125,14 +106,13 @@ h4 {
 
 h5,
 h6 {
-  font-size: 1.5rem;
+  @apply text-2xl;
   line-height: var(--heading-line-height);
   margin: var(--spacing-default) 0;
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 1.6;
+  @apply text-xl leading-relaxed;
   margin: var(--spacing-double-rem) 0;
 }
 
@@ -176,19 +156,15 @@ header {
 }
 
 .nav-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  @apply flex flex-row flex-wrap justify-center;
   list-style: none;
   margin: var(--spacing-double) 0 var(--spacing-default) 0;
 }
 
 .main-menu-item a {
-  border-bottom: none;
-  border-top: none;
+  @apply border-b-0 border-t-0 block text-base;
+
   color: var(--header-text-color);
-  display: block;
-  font-size: 1rem;
   margin: 0 var(--spacing-default);
   padding: var(--spacing-half) var(--spacing-half);
   text-decoration: none;
@@ -211,16 +187,7 @@ footer {
 }
 
 footer .link-wrapper {
-  margin: 0 auto;
   max-width: var(--wrapper-width);
-}
-
-.footer-link {
-  border-bottom: 2px solid transparent;
-  border-top: 2px solid transparent;
-  display: block;
-  font-size: 1.125rem;
-  padding: 5px 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -239,20 +206,6 @@ footer .link-wrapper {
   }
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-.hidden-link:focus {
-  outline: 0
-}
-
 .button {
   @apply bg-lt-blue-dark text-white border-4 border-transparent dark:bg-dk-blue-light dark:text-black py-3 px-5 my-4;
   @apply hover:border-4 hover:border-lt-blue-dark hover:bg-transparent hover:text-lt-blue-dark dark:hover:text-dk-blue-light dark:hover:border-dk-blue-light;
@@ -264,7 +217,7 @@ footer .link-wrapper {
 }
 
 button.demo-button {
-  margin-top: 0;
+  @apply mt-0;
 }
 
 /* Include some Tailwind project styles due to laziness */

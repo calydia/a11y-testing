@@ -9,7 +9,7 @@ const Toggle = ({theme,  toggleTheme }) => {
         aria-label={ (theme === "light") ? "Switch to dark version" : "Switch to light version"}
         title={ (theme === "light") ? "Switch to dark version" : "Switch to light version"}
       >
-        { (theme === "light") ? <HiMoon className="toggler-icon" aria-hidden="true" /> : <HiSun className="toggler-icon" aria-hidden="true" />}
+        { (theme === "light") ? <HiMoon className="w-8 h-8" aria-hidden="true" /> : <HiSun className="w-8 h-8" aria-hidden="true" />}
       </button>
     );
 };

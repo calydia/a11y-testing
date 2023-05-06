@@ -1,12 +1,8 @@
 .button-no-outline:focus {
-  outline: 0;
-}
-
-.button-transparent-outline {
+  @apply outline-0
 }
 
 .button-transparent-outline:focus {
-  outline-color: transparent;
-  outline-offset: 4px;
+  @apply outline-transparent outline-offset-4;
 }
 

@@ -76,4 +76,4 @@ const VisualsPage = () => {
 }
 export default VisualsPage;
 
-export const Head = () => <title>Tesing visuals | Testing for accessibility</title>
+export const Head = () => <title>Testing visuals | Testing for accessibility</title>
