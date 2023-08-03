@@ -67,7 +67,7 @@ const KeyboardPage = () => {
                   To press a button, press <code>enter</code> or <code>space</code>.
                 </li>
                 <li>
-                  When inside a checkbox or radio button set, press arrow keys to move between the options.
+                  When inside a radio button set, press arrow keys to move between the options.
                 </li>
               </ul>
             </div>
