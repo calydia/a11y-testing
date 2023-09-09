@@ -14,7 +14,7 @@ const VisualsPage = () => {
   return (
     <Layout>
       <main>
-        <div class="main-wrapper">
+        <div className="my-8 mx-4 max-w-[80em] lg:mx-auto">
           <div className="mx-auto max-w-[40em]">
             <h1 id="skip-target">
               Testing visuals
