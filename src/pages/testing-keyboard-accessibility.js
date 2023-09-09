@@ -9,7 +9,7 @@ const KeyboardPage = () => {
   return (
     <Layout>
       <main>
-        <div className="my-8 mx-4 max-w-[80em]">
+        <div class="main-wrapper">
           <div className="mx-auto max-w-[40em]">
             <h1 id="skip-target">
               Testing keyboard functionality
@@ -76,7 +76,7 @@ const KeyboardPage = () => {
 
         <FormWithErrors />
 
-        <div className="my-8 mx-4 max-w-[80em]">
+        <div class="main-wrapper">
           <div className="mx-auto max-w-[40em]">
             <h2>Element semantics</h2>
             <p>You might have heard the saying "A link is not a button" or vice versa. And this is not a minor thing. Links and buttons are semantic elements with different functions. A button does something on the page, for example, opens a modal. A link will take you somewhere, usually to another page.</p>
