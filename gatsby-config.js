@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `A11y testing - Sanna Mäkinen`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://testing-accessibility.sanna.ninja`,
     menuLinks: [
       {
         name: 'Home',
@@ -140,7 +140,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://a11ytestingmain.gatsbyjs.io',
+        host: 'https://testing-accessibility.sanna.ninja',
         policy: [{userAgent: '*', disallow: ['/']}]
       }
     },
