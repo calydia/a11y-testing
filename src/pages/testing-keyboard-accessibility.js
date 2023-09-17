@@ -6,6 +6,10 @@ import '../styles/forms.css';
 
 const KeyboardPage = () => {
 
+  const clickHandler = () => {
+    alert('You just clicked a button!');
+  }
+
   return (
     <Layout>
       <main>
@@ -31,22 +35,22 @@ const KeyboardPage = () => {
                   <p>Are there keyboard shortcuts that use only letter (including upper- and lower-case letters), punctuation, number, or symbol characters?</p>
                   <ul>
                     <li>
-                      The user needs to be able to either turn these off or change the shortcuts.
+                      The user needs to be able to either turn these off or change the shortcuts. On basic websites these are quite rare.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Is there a skip to content type link as the first focusable element on the page?
+                  Is there a skip to content type link as the first focusable element on the page? It can be always visible or become visible when focused.
                 </li>
                 <li>
-                  If there are more repeating blocks on the site, can those be skipped?
+                  If there are more repeating blocks on the site, can those be skipped? E.g. does the element have a skip link before all the content?
                 </li>
                 <li>
                   Is the focus order logical?
                 </li>
               </ul>
               <p>
-                The idea is to jump from one focusable element to the next. The focus isn't supposed to move to e.g. text content or headings. <a href="/answers" className="sr-only focus:outline-0">Do you know where you are?</a>
+                When you navigate with a keyboard, the idea is to jump from one focusable element to the next. The focus isn't supposed to move to e.g. text content or headings. <a href="/answers" className="sr-only focus:outline-0">Do you know where you are?</a>
               </p>
               <p>
                 The item you are focusing on should have a visible enough focus style. According to WCAG, the browser default style is enough to pass the criterion, but it's better to have more visible styles. Also, WCAG 2.2 might bring on changes.
@@ -70,6 +74,11 @@ const KeyboardPage = () => {
                   When inside a radio button set, press arrow keys to move between the options.
                 </li>
               </ul>
+
+              <h3>Safari has a setting that allows tabbing</h3>
+              <p>If you use Safari, know that you will need to first allow tabbing or otherwise it's not going to work.</p><p>
+                Go to Safari > Preferences > Advanced and System Preferences > Keyboard > Shortcuts
+              </p>
             </div>
           </div>
         </div>
@@ -91,7 +100,10 @@ const KeyboardPage = () => {
               It can get tedious to try to go through a list of items when you have multiple links for one item.
             </p>
             <p>
-              This type of approach can be also often seen in search results.
+              This type of approach can be also often seen in search results. Avoid it if you can.
+            </p>
+            <p>
+              Note that for a screen reader user a link with the URL as the text is not an optimal user experience.
             </p>
 
             <div className="border-t-2 mb-8">
@@ -109,13 +121,17 @@ const KeyboardPage = () => {
               <p>This is some description</p>
               <a href="#">https://the-url-of-this-page</a>
             </div>
-            <div className="border-t-2 mb-8">
+            <div className="border-t-2 border-b-2 pb-10 mb-8">
               <a href="#"><h3>Fourth element</h3></a>
               <p>This is some description</p>
               <a href="#">https://the-url-of-this-page</a>
             </div>
+
+            <div onClick={clickHandler} class="button inline-block">Can you access this button with a keyboard?</div>
           </div>
         </div>
+
+
       </main>
     </Layout>
   )

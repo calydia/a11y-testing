@@ -257,3 +257,9 @@ fieldset {
 .main-menu-link.active {
   @apply underline decoration-2 underline-offset-4 text-lt-purple dark:text-dk-blue-light
 }
+
+code {
+  @apply font-semibold;
+
+  color: var(--button-background-hover-color);
+}

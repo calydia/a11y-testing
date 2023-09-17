@@ -102,7 +102,7 @@ const ScreenReaderPage = () => {
             <h2>Language</h2>
 
             <p>The page language must be correct, CMS like Drupal usually handles it automatically. But for any text in another language, you need to specify the language with the lang attribute. <span lang="fi">Tämä teksti on suomea</span>.</p>
-            <p>When the language is marked correctly, the screen readers can read it correctly. Note that some screen readers require you to install language packages separately. So if your screen reader doesn't switch language, that might be the reason.</p>
+            <p>When the language is marked correctly, the screen readers can read it correctly. Note that some screen readers require you to install language packages separately. So if your screen reader doesn't switch language, that might be the reason. You only need to make sure you mark the language correctly, the users worry about the rest.</p>
           </div>
         </div>
       </main>
