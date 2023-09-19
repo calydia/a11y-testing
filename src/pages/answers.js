@@ -15,7 +15,7 @@ const AnswerPage = () => {
               <h2>Keyboard page</h2>
               <ul>
                 <li>
-                  There is a visually hidden link (href to this page) with the label "Do you know where you are?
+                  There is a visually hidden link (href to this page) with the label "Do you know where you are?"
                 </li>
                 <li>
                   In the radio button set, the Javascript option's label is not attached correctly to the select field.
@@ -43,6 +43,7 @@ const AnswerPage = () => {
                 <li>
                   The text paragraph describing the text spacing bookmarklet prevents the user from changing the necessary values.
                 </li>
+                <li>The togglable color contrast for the text doesn't pass the criterion.</li>
               </ul>
 
               <h2>Zooming page</h2>

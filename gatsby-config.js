@@ -40,6 +40,11 @@ module.exports = {
         name: 'Resources',
         link: '/resources',
         id: 'menu-7'
+      },
+      {
+        name: 'Tasks',
+        link: '/tasks',
+        id: 'menu-8'
       }
     ]
   },
