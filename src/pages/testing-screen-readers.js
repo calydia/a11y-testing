@@ -103,6 +103,43 @@ const ScreenReaderPage = () => {
 
             <p>The page language must be correct, CMS like Drupal usually handles it automatically. But for any text in another language, you need to specify the language with the lang attribute. <span lang="fi">Tämä teksti on suomea</span>.</p>
             <p>When the language is marked correctly, the screen readers can read it correctly. Note that some screen readers require you to install language packages separately. So if your screen reader doesn't switch language, that might be the reason. You only need to make sure you mark the language correctly, the users worry about the rest.</p>
+
+            <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
+              <h2 class="mt-0 mb-8">Screen reader usage</h2>
+              <p>Choose a screen reader you want to test with. Our laptops have VoiceOver in them you can use. If you've never used a screen reader before, let's start from the very beginning.</p>
+
+              <ol class="list-decimal	ml-4">
+                <li>Take a look at the screen reader settings. If you'll use VoiceOver, they are located under Accessibility > VoiceOver</li>
+                <li>You can find a VoiceOver Training on the settings page, but don't focus on it now. VoiceOver Utility has much more VoiceOver settings. What you want to do now is to check that you use the VoiceOver modifier you prefer. VoiceOver modifier is shortened in a lot of guides to VO.</li>
+                <li>Learn to toggle VoiceOver on and off. You can do it in the settings or use keyboard shortcuts.</li>
+                <li>Press VO + shift + F11. What happens?</li>
+                <li>Press VO + a. What happens? To stop, press crtl.</li>
+              </ol>
+
+              <h3>Now on to the actual usage:</h3>
+              <ol class="list-decimal	ml-4">
+                <li> I've hidden some mistakes on <a href="/testing-screen-readers">the screen reader testing page</a>. Check the examples with a screen reader.</li>
+                <li>
+                  Open up the VoiceOver rotor: VO + u. You can switch between different lists with the arrow keys (there are settings to define what lists are available in the Web settings, where the last tab is Web Rotor).<br>
+                  </br>
+                  With the rotor you can check for page headings and their levels much easier (you can press a number to show only that level of headings), you can check the page links and landmarks among many others.
+                </li>
+              </ol>
+
+              <h3>Some homework for you:</h3>
+
+              <ol class="list-decimal	ml-4">
+                <li>Familiarise yourself with desktop VoiceOver settings. You can tweak them to your liking.</li>
+                <li>Apple has a lot of good instructions for VoiceOver on all their devices, those can be helpful as well, at least check them out so you know where to find them if you need them.</li>
+                <li>Familiarise yourself a bit with whatever screen reader is available on your phone. iOs has VoiceOver and Android has TalkBack.
+                  <ol class="list-decimal	ml-4">
+                    <li>Learn to turn it on an off.</li>
+                    <li>Learn how you should move from one element to another and how you can activate elements.</li>
+                    <li>Learn to start and stop reading content.</li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
       </main>

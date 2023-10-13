@@ -67,6 +67,15 @@ const ZoomPage = () => {
             <div>
               <button className="button" style={zoomButton}>I am a button</button>
             </div>
+
+            <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
+              <h2 class="mt-0 mb-8">Zooming</h2>
+              <p>Get familiar with browser zooming.</p>
+              <ol class="list-decimal	ml-4">
+                <li>Use "regular" zooming. Set your browser width to 1280 pixels and then zoom to 400%.</li>
+                <li>Then switch to Text only zooming. See how it behaves. Firefox and Safari support this by default.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </main>

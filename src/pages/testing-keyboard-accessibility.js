@@ -77,7 +77,7 @@ const KeyboardPage = () => {
 
               <h3>Safari has a setting that allows tabbing</h3>
               <p>If you use Safari, know that you will need to first allow tabbing or otherwise it's not going to work.</p><p>
-                Go to Safari > Preferences > Advanced and System Preferences > Keyboard > Shortcuts
+                Go to Safari / Preferences / Advanced and System Preferences / Accessibility: Press Tb to highlight each item on a web page
               </p>
             </div>
           </div>
@@ -128,10 +128,21 @@ const KeyboardPage = () => {
             </div>
 
             <div onClick={clickHandler} class="button inline-block">Can you access this button with a keyboard?</div>
+
+            <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
+              <h2 class="mt-0 mb-8">Your tasks</h2>
+              <p>Practice keyboard usage.</p>
+              <ol class="list-decimal	ml-4">
+                <li>
+                  Basic usage: move from one element both forwards and backwards, activate buttons and links.
+                </li>
+                <li>
+                  Navigate forms. Make sure you know how to use the different types of basic form elements.
+                </li>
+              </ol>
+            </div>
           </div>
         </div>
-
-
       </main>
     </Layout>
   )

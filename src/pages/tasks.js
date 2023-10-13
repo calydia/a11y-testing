@@ -36,7 +36,7 @@ const TaskPage = () => {
             </ol>
 
             <h2>Zooming</h2>
-            Get familiar with browser zooming.
+            <p>Get familiar with browser zooming.</p>
             <ol class="list-decimal	ml-4">
               <li>Use "regular" zooming. Set your browser width to 1280 pixels and then zoom to 400%.</li>
               <li>Then switch to Text only zooming. See how it behaves. Firefox and Safari support this by default.</li>
@@ -83,7 +83,7 @@ const TaskPage = () => {
               <li>Press VO + a. What happens? To stop, press crtl.</li>
             </ol>
 
-            <p>Now on to the actual usage:</p>
+            <h3>Now on to the actual usage:</h3>
             <ol class="list-decimal	ml-4">
               <li> I've hidden some mistakes on <a href="/testing-screen-readers">the screen reader testing page</a>. Check the examples with a screen reader.</li>
               <li>
@@ -93,7 +93,7 @@ const TaskPage = () => {
               </li>
             </ol>
 
-            <p>Some homework for you:</p>
+            <h3>Some homework for you:</h3>
 
             <ol class="list-decimal	ml-4">
               <li>Familiarise yourself with desktop VoiceOver settings. You can tweak them to your liking.</li>
@@ -105,8 +105,6 @@ const TaskPage = () => {
                   <li>Learn to start and stop reading content.</li>
                 </ol>
               </li>
-              <li></li>
-              <li></li>
             </ol>
 
             </div>

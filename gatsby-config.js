@@ -13,15 +13,6 @@ module.exports = {
         id: 'menu-1'
       },
       {
-        name: 'Keyboard',
-        link: '/testing-keyboard-accessibility',
-        id: 'menu-2'
-      },
-      {
-        name: 'Screen reader',
-        link: '/testing-screen-readers',
-        id: 'menu-3'
-      },      {
         name: 'Visuals',
         link: '/testing-visuals',
         id: 'menu-4'
@@ -32,9 +23,19 @@ module.exports = {
         id: 'menu-5'
       },
       {
+        name: 'Keyboard',
+        link: '/testing-keyboard-accessibility',
+        id: 'menu-2'
+      },
+      {
         name: 'Automated tools',
         link: '/testing-automated-tools',
         id: 'menu-6'
+      },
+      {
+        name: 'Screen reader',
+        link: '/testing-screen-readers',
+        id: 'menu-3'
       },
       {
         name: 'Resources',
