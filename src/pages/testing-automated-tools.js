@@ -17,7 +17,7 @@ const AutomatedToolPage = () => {
               <h2>Some of my favorite tools</h2>
               <ul>
                 <li>
-                  Siteimprove is available both as a whole service to crawl your entire site and as a browser plugin
+                  Siteimprove is available both as a whole service to crawl your entire site and as <a href="https://www.siteimprove.com/integrations/browser-extensions/">a browser plugin</a>
                 </li>
                 <li>
                   Chrome and Edge have Lighthouse built-in
@@ -43,21 +43,7 @@ const AutomatedToolPage = () => {
               <h2 class="mt-0 mb-8">Your tasks</h2>
               <ol class="list-decimal	ml-4">
                 <li>
-                  Choose an automated tool of your liking. If you aren't familiar with any tools, here are a couple of options for you:
-                  <ul>
-                    <li>
-                      <a href="https://www.deque.com/axe/">Axe</a> by Deque is installed as a plugin.
-                    </li>
-                    <li>
-                      <a href="https://wave.webaim.org/">Wave</a> by WebAIM can be used in a browser.
-                    </li>
-                    <li>
-                      Lighthouse is available by default in Chrome.
-                    </li>
-                    <li>
-                      <a href="https://www.siteimprove.com/integrations/browser-extensions/">Sightimprove has a free Accessibility Checker extension for Firefox, Chrome, Opera and Edge. As well as a Browser Extension for Chrome and Firefox.</a>
-                    </li>
-                  </ul>
+                  Choose an automated tool to test with.
                 </li>
                 <li>
                   Take a look at this site with the tool. I've hidden some mistakes for you to find. Take note of what kinds of mistakes the tool finds. Are the mistakes related to WCAG 2.1 A or AA level? Or are they labelled as best practices?
