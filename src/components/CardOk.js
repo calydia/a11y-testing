@@ -23,7 +23,7 @@ export default function CardOk(index) {
           <span className="sr-only">on</span>
           <span className="block text-base md:text-xl pb-4">
             January 20th, 2023
-            <span aria-hidden="true"> | </span><span className="sr-only">in category</span> News
+            <span aria-hidden="true"> | </span><span class="sr-only">in category</span> News
           </span>
         </div>
       </a>

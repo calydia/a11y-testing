@@ -77,7 +77,7 @@ const KeyboardPage = () => {
 
               <h3>Safari has a setting that allows tabbing</h3>
               <p>If you use Safari, know that you will need to first allow tabbing or otherwise it's not going to work.</p><p>
-                Go to Safari / Preferences / Advanced and System Preferences / Accessibility: Press Tb to highlight each item on a web page
+                Go to Safari / Preferences / Advanced and System Preferences / Accessibility: Press Tab to highlight each item on a web page
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ const KeyboardPage = () => {
 
             <p>
               You might have seen implementations of cards where you have separate links to the target. For example, in an image, heading and then a link button. While this technically is allowed, it is not recommended for several reasons.
-              It can get tedious to try to go through a list of items when you have multiple links for one item.
+              It can get tedious to try to go through a list of items when you have multiple links for one item. Accessibility rules also dictate that you should always link to the same target with the same link text. This implementation breaks that as well.
             </p>
             <p>
               This type of approach can be also often seen in search results. Avoid it if you can.
@@ -139,6 +139,7 @@ const KeyboardPage = () => {
                 <li>
                   Navigate forms. Make sure you know how to use the different types of basic form elements.
                 </li>
+                <li>Check the last example on this page with multiple links for the same element. This is just a simple example, real world examples might have three or even more links to the same element.</li>
               </ol>
             </div>
           </div>
