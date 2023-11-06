@@ -19,6 +19,9 @@ const ResourcePage = () => {
                 <li>
                   <a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG (Quick Reference)</a>
                 </li>
+                <li>
+                  <a href="https://accessibility.huit.harvard.edu/describe-content-images">Write helpful Alt Text to describe images</a>
+                </li>
               </ul>
             </div>
           </div>

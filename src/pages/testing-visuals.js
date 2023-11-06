@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import Layout from '../components/Layout';
+import { StaticImage } from "gatsby-plugin-image";
 import '../styles/visuals.css';
 
 const VisualsPage = () => {
@@ -78,6 +79,92 @@ const VisualsPage = () => {
 
             <p>Focus styles do have requirements. Check that all interactive elements have focus styles that are visible enough. There are multiple styles of focuses on this site just to demonstrate different types of options.</p>
 
+            <h2>Image alternative texts</h2>
+
+            <p>While most of the image alternative texts are content, some images are added by us. Those need to have a good alternative text or they should be hidden from assistive technologies. And translations are super important! (For everything we add: images, texts etc)</p>
+
+            Here are some examples of alternative texts. Do you think they are descriptive enough? Did your expectations match the images?
+
+            <h3>Example: logo</h3>
+
+            <p>A made up example: The logos shown would be links. All of the logo images have an alt "Logo". Do you as a user know where the link will take you?</p>
+
+            <div className="flex wrap gap-2">
+              <StaticImage
+                src="../images/lut-logo-example.png"
+                alt=""
+                width={1194}
+                height={270}
+              />
+            </div>
+
+            <p>With logos, add the text as the alt or in the case of links, describe the target. For example: LUT University front page/website.</p>
+
+            <h3>Example: Water</h3>
+
+            <p>Both of these images have alt of "Water".</p>
+            <div className="flex wrap gap-2">
+              <StaticImage
+                src="../images/water-example.webp"
+                alt="Water"
+                width={500}
+                height={300}
+              />
+              <StaticImage
+                src="../images/water-example-2.webp"
+                alt="Water"
+                width={500}
+                height={300}
+              />
+            </div>
+            <p>While technically true, maybe they could be a bit more descriptive?</p>
+
+            <h3>Example: Summer/Spring/Autumn image</h3>
+
+            <p>Two of the images have alt text "Spring image". One "Summer image" and one "Autumn image". Can you tell which is which?</p>
+
+            <div className="flex wrap gap-2 mb-2">
+              <StaticImage
+                src="../images/summer-image.webp"
+                alt="Spring image"
+                width={500}
+                height={300}
+              />
+              <StaticImage
+                src="../images/summer-image-2.webp"
+                alt="Summer image"
+                width={500}
+                height={300}
+              />
+              </div>
+              <div className="flex wrap gap-2">
+              <StaticImage
+                src="../images/summer-image-4.webp"
+                alt="Autumn image"
+                width={500}
+                height={300}
+              />
+              <StaticImage
+                src="../images/summer-image-3.webp"
+                alt="Spring image"
+                width={500}
+                height={300}
+              />
+            </div>
+
+            <p>Again, technically yes, but my guesses wouldn't have been right. And not everyone has the same types of things in mind when they think of the seasons, right? Also, the word "image" is unnecessary because assistive technologies announce it by default and now it will be said twice.</p>
+
+            <h3>What should a good alt text have, then?</h3>
+            <p>Some recommendations:</p>
+            <ul>
+              <li>Don't add the word "image".</li>
+              <li>Don't add the word "logo". If it is a logo, just add the company name.</li>
+              <li>Describe what is in the image from the point-of-view of the context where it is used.</li>
+              <li>If the image is a link, describe the target instead of the image.</li>
+            </ul>
+
+            <p>And finally, if the image really doesn't bring any meaning to the context where it is used, just leave the alt text empty.</p>
+
             <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
               <h2 class="mt-0 mb-8">Your tasks</h2>
               <ol class="list-decimal	ml-4">
@@ -85,7 +172,7 @@ const VisualsPage = () => {
                   Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on the <a href="/testing-visuals">testing visuals page</a>, you can see how it behaves when you have an issue.
                 </li>
                 <li>
-                  Sometimes you might want to verify color contrast. Automated tools usually catch text and background issues, but in some cases the tools might not be enough. Using a tool like <a href="https://webaim.org/resources/contrastchecker/">WebAIM's Contrast Checker might help you. Take a look at a color checker and how it tells you about the results</a>.
+                 Let's think about image alternative texts for a moment. Think of this image //IMAGE NEEDED//. What would be a good alt text for this? What about context where it is used, would you change something?
                 </li>
               </ol>
             </div>
