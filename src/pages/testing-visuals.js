@@ -85,7 +85,7 @@ const VisualsPage = () => {
 
             Here are some examples of alternative texts. Do you think they are descriptive enough? Did your expectations match the images?
 
-            <h3>Example: logo</h3>
+            <h3>Example: Logo</h3>
 
             <p>A made up example: The logos shown would be links. All of the logo images have an alt "Logo". Do you as a user know where the link will take you?</p>
 
@@ -121,7 +121,7 @@ const VisualsPage = () => {
 
             <h3>Example: Summer/Spring/Autumn image</h3>
 
-            <p>Two of the images have alt text "Spring image". One "Summer image" and one "Autumn image". Can you tell which is which?</p>
+            <p>These are real example images taken from their context. In their use case, the alt should be empty. But since there are alts, they should be descriptive, right? Two of the images have alt text "Spring image". One "Summer image" and one "Autumn image". Can you tell which is which?</p>
 
             <div className="flex wrap gap-2 mb-2">
               <StaticImage
@@ -163,7 +163,7 @@ const VisualsPage = () => {
               <li>If the image is a link, describe the target instead of the image.</li>
             </ul>
 
-            <p>And finally, if the image really doesn't bring any meaning to the context where it is used, just leave the alt text empty.</p>
+            <p>And finally, if the image really doesn't bring any meaning to the context where it is used, just leave the alt text empty. That way you'll reduce unnecessary clutter from the users.</p>
 
             <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
               <h2 class="mt-0 mb-8">Your tasks</h2>
