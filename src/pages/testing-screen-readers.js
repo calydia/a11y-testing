@@ -124,14 +124,14 @@ const ScreenReaderPage = () => {
                 <li>
                   Open up the VoiceOver rotor: VO + u. You can switch between different lists with the arrow keys (there are settings to define what lists are available in the Web settings, where the last tab is Web Rotor).<br>
                   </br>
-                  With the rotor you can check for page headings and their levels much easier (you can press a number to show only that level of headings), you can check the page links and landmarks among many others.
+                  With the rotor you can check for page headings and their levels much easier (you can press a number to show only that level of headings), you can check the page links and landmarks among many others. Test the different options available to you in the rotor and see how the results are shown.
                 </li>
               </ol>
 
               <h3>Some homework for you:</h3>
 
               <ol class="list-decimal	ml-4">
-                <li>Familiarise yourself with desktop VoiceOver settings. You can tweak them to your liking.</li>
+                <li>Familiarise yourself with desktop VoiceOver settings (or the screen reader of your choosing). You can tweak them to your liking.</li>
                 <li>Apple has a lot of good instructions for VoiceOver on all their devices, those can be helpful as well, at least check them out so you know where to find them if you need them.</li>
                 <li>Familiarise yourself a bit with whatever screen reader is available on your phone. iOs has VoiceOver and Android has TalkBack.
                   <ol class="list-decimal	ml-4">
