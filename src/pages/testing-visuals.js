@@ -172,7 +172,7 @@ const VisualsPage = () => {
                   Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on the <a href="/testing-visuals">testing visuals page</a>, you can see how it behaves when you have an issue.
                 </li>
                 <li>
-                 Let's think about image alternative texts for a moment. Think of this image //IMAGE NEEDED//. What would be a good alt text for this? What about context where it is used, would you change something?
+                  Let's think about image alternative texts for another moment. Think of this image //IMAGE NEEDED//. What would be a good alt text for this? What about context where it is used, would you change something?
                 </li>
               </ol>
             </div>
