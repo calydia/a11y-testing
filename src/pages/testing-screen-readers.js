@@ -85,11 +85,13 @@ const ScreenReaderPage = () => {
               But we often also forget that screen reader users listen to the content with much faster pace than we do.
             </p>
 
+            <p>One thing to know is that VoiceOver behaves a bit different in Sonoma than it does in Ventura!</p>
+
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-8" role="list">
               <CardOk index="1" alt="" />
-              <CardNotOk index="2" title="Interesting headline for this card" ariaLabel="This is a title but of which card?" alt="dafesfadas" />
-              <CardNotOk index="3" title="Super interesting card!" ariaLabel="" alt="A fluffy cat sniffs her new crocheted bed." />
-              <CardNotOk index="4" title="What is this card?" />
+              <CardNotOk index="2" title="Title: Interesting headline for this card" ariaLabel="ARIA Label: This is a title but of which card?" alt="dafesfadas" />
+              <CardNotOk index="3" title="Title: Super interesting card!" ariaLabel="" alt="A fluffy cat sniffs her new crocheted bed." />
+              <CardNotOk index="4" title="Title: What is this card?" />
             </ul>
 
             <p>One recommendation that is given in accessibility audits is to have the image below the heading.
@@ -97,7 +99,7 @@ const ScreenReaderPage = () => {
 
             <p>If possible, this can be done by visually moving the image. So the structure in the DOM could be heading, text, image and then you can move the image with CSS to the correct place.</p>
 
-            <p>If you read this far, great! Now pause for just a moment to think how you feel about these types of cards or content teasers etc. Should the whole element be clickable or just the heading or a link button?</p>
+            <p>If you read this far, great! Now pause for just a moment to think how you feel about these types of cards or content teasers etc. Should the whole element be clickable or just the heading or a link button? There is no right or wrong answer, only preferences.</p>
 
             <h2>Language</h2>
 

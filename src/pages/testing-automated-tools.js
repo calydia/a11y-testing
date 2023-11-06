@@ -33,9 +33,9 @@ const AutomatedToolPage = () => {
                 </li>
               </ul>
               <ul></ul>
-                <p>Pick one automated tool and take a look at this site to see what kind of errors the automated tool will find. It will find most of the mistakes added to this site.</p>
-                <h4>Code validity</h4>
-                <p>Remember to also check your code with a markup validator, like <a href="https://validator.w3.org/">The W3C Markup Validation Service</a>. Valid and semantically correct HTML is a huge part of accessible web development. You can avoid several problems just by using the correct elements and the default functionalities for them.</p>
+              <p>Pick one automated tool and take a look at this site to see what kind of errors the automated tool will find. It will find most of the mistakes added to this site.</p>
+              <h4>Code validity</h4>
+              <p>Remember to also check your code with a markup validator, like <a href="https://validator.w3.org/">The W3C Markup Validation Service</a>. Valid and semantically correct HTML is a huge part of accessible web development. You can avoid several problems just by using the correct elements and the default functionalities for them.</p>
               <h6></h6>
               <p></p>
             </div>

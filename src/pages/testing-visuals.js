@@ -41,6 +41,9 @@ const VisualsPage = () => {
                   Is the font readable?
                 </li>
                 <li>
+                  Is some meaning indicated only by color?
+                </li>
+                <li>
                   <p>
                     Is there enough spacing for the text? Recommendation:
                   </p>
@@ -69,6 +72,12 @@ const VisualsPage = () => {
             <p className={`text-demo ${isActive ? 'color-contrast' : ''}`}>Just to demonstrate the effect of color contrast, you can press the next button to change the color contrast of this text paragraph to a lesser contrast. If you have a good screen and color vision, you might still be able to read the text. But not everyone is so lucky.</p>
             <button className="button demo-button" onClick={changeColor}>Press this button to toggle color contrast</button>
 
+            <h2>Hover and focus styles</h2>
+
+            <p>Hover styles aren't required by WCAG. But if they are present, they need to comply with the rules. It is usually recommended to have at least two visual cues. Hover styles are recommended because they provide useful information for sighted users.</p>
+
+            <p>Focus styles do have requirements. Check that all interactive elements have focus styles that are visible enough.</p>
+
             <div class="mt-12 lg:-ml-12 lg:-mr-12 p-12 border-solid border-4 border-lt-code-border dark:border-dk-code-border">
               <h2 class="mt-0 mb-8">Your tasks</h2>
               <ol class="list-decimal	ml-4">
@@ -76,7 +85,7 @@ const VisualsPage = () => {
                   Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on the <a href="/testing-visuals">testing visuals page</a>, you can see how it behaves when you have an issue.
                 </li>
                 <li>
-                  Sometimes you might want to verify color contrast. Automated tools usually catch text and background issues, but in some cases the tools might not be enough. Using a tool like <a href="https://webaim.org/resources/contrastchecker/">WebAIM's Contrast Checker might help you</a>.
+                  Sometimes you might want to verify color contrast. Automated tools usually catch text and background issues, but in some cases the tools might not be enough. Using a tool like <a href="https://webaim.org/resources/contrastchecker/">WebAIM's Contrast Checker might help you. Take a look at a color checker and how it tells you about the results.</a>.
                 </li>
               </ol>
             </div>

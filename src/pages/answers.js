@@ -24,7 +24,15 @@ const AnswerPage = () => {
                   The select element's label is not attached correctly to the select field.
                 </li>
                 <li>
-                  Elements with multiple links to it should be h2 since it's not related to element semantics.
+                  Elements with multiple links to it should be h2 since it's not related to element semantics. This will also fix the problem of the headings under this heading being the same level as the parent heading.
+                  <ul>
+                    <li>
+                      The heading links only change color on hover. That is not enough. The url links have bolder underline on hover, which provides another visual cue.
+                    </li>
+                    <li>
+                      The url link and the heading link have the same target. All links to the same target should have the same link text.
+                    </li>
+                  </ul>
                 </li>
               </ul>
 
@@ -43,7 +51,12 @@ const AnswerPage = () => {
                 <li>
                   The text paragraph describing the text spacing bookmarklet prevents the user from changing the necessary values.
                 </li>
-                <li>The togglable color contrast for the text doesn't pass the criterion.</li>
+                <li>
+                  The toggled color contrast for the text doesn't pass the criterion.
+                </li>
+                <li>
+                  The button "Can you access this button with a keyboard" cannot be accessed with a keyboard.
+                </li>
               </ul>
 
               <h2>Zooming page</h2>
@@ -62,6 +75,7 @@ const AnswerPage = () => {
                 <li>
                   An empty heading.
                 </li>
+                <li>An empty ul-element.</li>
               </ul>
 
               <h2>Other things</h2>
