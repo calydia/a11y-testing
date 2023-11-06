@@ -44,6 +44,10 @@ const AnswerPage = () => {
                 <li>
                   The first Open menu button works for sighted users but gives no information to assistive technology users.
                 </li>
+                <li>
+                  Not all of the cards have matching visual and accessible names.
+                </li>
+                <li>Note! With Sonoma the visually hidden texts get read first. Ventura works normally, and Windows with NVDA reads it correctly. This shows why multiple screen readers should be tested.</li>
               </ul>
 
               <h2>Visuals page</h2>

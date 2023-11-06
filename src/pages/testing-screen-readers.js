@@ -89,9 +89,9 @@ const ScreenReaderPage = () => {
 
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-8" role="list">
               <CardOk index="1" alt="" />
-              <CardNotOk index="2" title="Title: Interesting headline for this card" ariaLabel="ARIA Label: This is a title but of which card?" alt="dafesfadas" />
-              <CardNotOk index="3" title="Title: Super interesting card!" ariaLabel="" alt="A fluffy cat sniffs her new crocheted bed." />
-              <CardNotOk index="4" title="Title: What is this card?" />
+              <CardNotOk index="2" title="Interesting headline for this card" ariaLabel="ARIA Label: We are overriding the visible content and causing confusion" alt="dafesfadas" />
+              <CardNotOk index="3" title="Super interesting card!" ariaLabel="" alt="A fluffy cat sniffs her new crocheted bed." />
+              <CardNotOk index="4" title="What is this card?" />
             </ul>
 
             <p>One recommendation that is given in accessibility audits is to have the image below the heading.
