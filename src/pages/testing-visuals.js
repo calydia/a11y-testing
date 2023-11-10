@@ -172,6 +172,9 @@ const VisualsPage = () => {
                   Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on the <a href="/testing-visuals">testing visuals page</a>, you can see how it behaves when you have an issue.
                 </li>
                 <li>
+                  Take a look at the image examples on this page. Were you able to tell the season images apart?
+                </li>
+                <li>
                   Let's think about image alternative texts for another moment. Think of this image:
                   <StaticImage
                     src="../images/mikko.jpg"

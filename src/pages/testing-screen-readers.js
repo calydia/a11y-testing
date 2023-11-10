@@ -120,7 +120,7 @@ const ScreenReaderPage = () => {
 
               <h3>Now on to the actual usage:</h3>
               <ol class="list-decimal	ml-4">
-                <li> I've hidden some mistakes on <a href="/testing-screen-readers">the screen reader testing page</a>. Check the examples with a screen reader.</li>
+                <li> I've hidden some mistakes on this page. Check the examples with a screen reader.</li>
                 <li>
                   Open up the VoiceOver rotor: VO + u. You can switch between different lists with the arrow keys (there are settings to define what lists are available in the Web settings, where the last tab is Web Rotor).<br>
                   </br>
