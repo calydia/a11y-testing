@@ -140,7 +140,10 @@ const KeyboardPage = () => {
                   Navigate forms. Make sure you know how to use the different types of basic form elements.
                 </li>
                 <li>
-                  Check the last example on this page with multiple links for the same element. This is just a simple example, real world examples might have three or even more links to the same element.
+                  Activate the link button on this page with the space key. What happened?
+                </li>
+                <li>
+                  Check the last example on this page with multiple links for the same element and the button at the end.
                 </li>
               </ol>
             </div>
