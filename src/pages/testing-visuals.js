@@ -169,7 +169,7 @@ const VisualsPage = () => {
               <h2 class="mt-0 mb-8">Your tasks</h2>
               <ol class="list-decimal	ml-4">
                 <li>
-                  Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on the <a href="/testing-visuals">testing visuals page</a>, you can see how it behaves when you have an issue.
+                  Test the text spacing bookmarklet (or use a CSS snippet type solution to tweak the site code). If you test it on this page, you can see how it behaves when you have an issue.
                 </li>
                 <li>
                   Take a look at the image examples on this page. Were you able to tell the season images apart?
